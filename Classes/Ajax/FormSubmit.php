@@ -45,7 +45,7 @@ class FormSubmit extends AbstractAjax {
       return new HtmlResponse(json_encode(['success' => false, 'errors' => $errors]) ?: '', 200);
     }
 
-    return new HtmlResponse(json_encode(['success' => true, 'data' => $output]) ?: '', 200);
+    return new HtmlResponse(json_encode(['success' => true, 'form' => $output]) ?: '', 200);
   }
 
   /**
